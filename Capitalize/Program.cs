@@ -23,8 +23,8 @@ namespace Capitalize
         {
             var resultArr = str.
                                 Split(" ").
-                                Select(s => Char.ToUpper(s[0]) + s.Substring(1))
-                                .ToArray();
+                                Select(s => Char.ToUpper(s[0]) + s.Substring(1)).
+                                ToArray();
             return String.Join(" ", resultArr);
         }
     }
